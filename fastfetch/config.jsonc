@@ -1,0 +1,33 @@
+{
+    "logo": {
+        "type": "kitty",
+        "width": 38,
+        "padding": {
+            "top": 0,
+            "right": 2,
+            "bottom": 5 
+        }
+    },
+
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "wm",
+        "terminal",
+        "cpu",
+        "gpu",
+        "memory",
+        "battery"
+
+    ],
+  "display": {
+        "color": {
+            "keys": "yellow"
+    }
+ }     
+}

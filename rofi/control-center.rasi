@@ -1,0 +1,56 @@
+* {
+    background: #0a0a0a;
+    foreground: #FFB800;
+    selected: #0a0a0a;
+    active: #FFB800;
+    urgent: #FFB800;
+
+    font: "JetBrainsMono Nerd Font 13";
+}
+
+window {
+    width: 320px;
+    border: 2px;
+    border-color: #FFB800;
+    border-radius: 12px;
+    background-color: #0a0a0a;
+}
+
+mainbox {
+    padding: 15px;
+    spacing: 10px;
+}
+
+inputbar {
+    padding: 8px;
+    border: 1px;
+    border-color: #FFB800;
+}
+
+prompt {
+    text-color: #FFB800;
+}
+
+entry {
+    text-color: #FFB800;
+}
+
+listview {
+    lines: 7;
+    spacing: 5px;
+}
+
+element {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+element normal {
+    background-color: #0a0a0a;
+    text-color: #FFB800;
+}
+
+element selected {
+    background-color: #FFB800;
+    text-color: #0a0a0a;
+}
