@@ -1,0 +1,37 @@
+{
+    "logo": {
+        "type": "kitty",
+        "width": 38,
+        "padding": {
+            "top": 0,
+            "right": 2,
+            "bottom": 5 
+        }
+    },
+
+    "modules": [
+        "title",
+        "separator",
+         {
+        "type": "command",
+        "key": "OS",
+        "text": "echo 'Lucky Arch Linux'"
+         },
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "wm",
+        "terminal",
+        "cpu",
+        "gpu",
+        "memory",
+        "battery"
+
+    ],
+  "display": {
+        "color": {
+            "keys": "yellow"
+    }
+ }     
+}

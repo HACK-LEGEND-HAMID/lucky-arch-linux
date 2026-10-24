@@ -285,6 +285,10 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
+-- Hacking tools keys 
+hl.bind("CTRL + SHIFT + B", hl.dsp.exec_cmd("burpsuite"))
+hl.bind("CTRL + SHIFT + Z", hl.dsp.exec_cmd("proxychains4 zaproxy"))
+hl.bind("CTRL + Z", hl.dsp.exec_cmd("zaproxy"))
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
@@ -292,6 +296,7 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
     hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
 end
+
 
 -- Example special workspace (scratchpad)
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
@@ -331,6 +336,7 @@ hl.bind("F6", hl.dsp.exec_cmd("brightnessctl set 5%+"))
 -------------------------
 hl.bind("CTRL + B", hl.dsp.exec_cmd("vivaldi"))
 hl.bind("PRINT", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"))
+hl.bind("CTRL + SHIFT + F", hl.dsp.exec_cmd("firefox"))
 
 -------------------------
 -- VOLUME KEYBINDINGS --

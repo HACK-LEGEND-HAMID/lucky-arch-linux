@@ -1,0 +1,78 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+
+    "modules-left": [
+        "custom/arch"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "custom/control-center",
+        "pulseaudio",
+        "battery",
+        "clock"
+    ],
+
+    "custom/arch": {
+        "format": " 󰣇 LUCKY ARCH ",
+        "tooltip": false
+    },
+
+    "custom/control-center": {
+        "format":"  ",
+        "tooltip": true,
+        "tooltip-text": "Control Center",
+        "on-click": "~/.config/rofi/control-center.sh"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "default": ""
+        }
+    },
+
+    "pulseaudio": {
+        "format": " {icon} {volume}% ",
+        "format-muted": " 󰝟 MUTED ",
+        "format-icons": {
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
+        }
+    },
+
+    "battery": {
+        "format": " {icon} {capacity}% ",
+        "format-charging": " 󰂄 {capacity}% ",
+        "format-full": " 󰁹 {capacity}% ",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+
+    "clock": {
+        "format": "   {:%H:%M} ",
+        "tooltip": true,
+        "tooltip-format": "{:%A, %d %B %Y}"
+    }
+}

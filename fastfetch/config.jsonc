@@ -12,7 +12,11 @@
     "modules": [
         "title",
         "separator",
-        "os",
+         {
+        "type": "command",
+        "key": "OS",
+        "text": "echo 'Lucky Arch Linux'"
+         },
         "kernel",
         "uptime",
         "packages",
